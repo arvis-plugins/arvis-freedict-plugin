@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/plugin-schema.json",
+    "creator": "jopemachine",
+    "name": "arvis-freedict-plugin",
+    "enabled": true,
+    "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
+    "readme": "",
+    "version": "0.0.1",
+    "defaultIcon": "icon.png",
+    "main": "index.js",
+    "webAddress": "https://github.com/jopemachine/arvis-freedict-plugin",
+    "actions": [
+        {
+            "type": "clipboard",
+            "modifiers": "normal",
+            "text": "{query}"
+        }
+    ]
+}
