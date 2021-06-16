@@ -12,8 +12,15 @@
     "dictionary"
   ],
   "author": "jopemachien",
+  "files": [
+    "arvis-plugin.json",
+    "*.js",
+    "README.md",
+    "LICENSE",
+    "icon.png"
+  ],
   "license": "MIT",
   "dependencies": {
-    "arvish": "0.0.5"
+    "arvish": "0.0.7"
   }
 }

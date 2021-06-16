@@ -12,6 +12,9 @@ const transform = (resp) => {
           title: `[${meaning.partOfSpeech}]: ${word.word}: ${definition.definition}`,
           subtitle: `${definition.example}` ? `${definition.example}` : "",
           arg: definition.definition,
+          variables: {
+            action: 'clipboard'
+          }
         });
       });
     });
@@ -21,6 +24,24 @@ const transform = (resp) => {
 };
 
 const getPluginItems = async ({ inputStr }) => {
+  if (
+    inputStr === "@config" ||
+    inputStr.startsWith("@config/arvis-freedict-plugin")
+  ) {
+    return {
+      items: [
+        {
+          title: "Open config file of arvis-freedict-plugin",
+          subtitle: arvish.getConfig().path,
+          arg: arvish.getConfig().path,
+          variables: {
+            action: 'open'
+          }
+        },
+      ],
+    };
+  }
+
   if (inputStr && inputStr.length > 1) {
     try {
       const resp = await arvish.fetch(

@@ -11,9 +11,27 @@
     "webAddress": "https://github.com/jopemachine/arvis-freedict-plugin",
     "actions": [
         {
-            "type": "clipboard",
+            "type": "cond",
             "modifiers": "normal",
-            "text": "{query}"
+            "if": {
+                "cond": "{var:action} == 'clipboard'",
+                "actions": {
+                    "then": [
+                        {
+                            "type": "clipboard",
+                            "modifiers": "normal",
+                            "text": "{query}"
+                        }
+                    ],
+                    "else": [
+                        {
+                            "type": "open",
+                            "modifiers": "normal",
+                            "target": "{query}"
+                        }
+                    ]
+                }
+            }
         }
     ]
 }
