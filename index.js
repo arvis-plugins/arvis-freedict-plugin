@@ -13,8 +13,8 @@ const transform = (resp) => {
           subtitle: `${definition.example}` ? `${definition.example}` : "",
           arg: definition.definition,
           variables: {
-            action: 'clipboard'
-          }
+            action: "clipboard",
+          },
         });
       });
     });
@@ -24,23 +24,14 @@ const transform = (resp) => {
 };
 
 const getPluginItems = async ({ inputStr }) => {
-  if (
-    inputStr === "@config" ||
-    inputStr.startsWith("@config/arvis-freedict-plugin")
-  ) {
-    return {
-      items: [
-        {
-          title: "Open config file of arvis-freedict-plugin",
-          subtitle: arvish.getConfig().path,
-          arg: arvish.getConfig().path,
-          variables: {
-            action: 'open'
-          }
-        },
-      ],
-    };
-  }
+  const configItems = [
+    {
+      command: "@config/arvis-freedict-plugin",
+      title: "Open config file of arvis-freedict-plugin",
+      subtitle: "@config/arvis-freedict-plugin",
+      arg: arvish.getConfig().path,
+    },
+  ];
 
   if (inputStr && inputStr.length > 1) {
     try {
@@ -50,11 +41,9 @@ const getPluginItems = async ({ inputStr }) => {
       );
 
       return {
-        items: transform(resp),
+        items: [...transform(resp), ...configItems],
       };
-    } catch (err) {
-    
-    }
+    } catch (err) {}
   }
 
   return {
