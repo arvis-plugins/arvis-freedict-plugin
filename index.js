@@ -47,7 +47,7 @@ const getPluginItems = async ({ inputStr }) => {
   }
 
   return {
-    items: [],
+    items: configItems,
   };
 };
 
