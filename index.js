@@ -10,7 +10,7 @@ const transform = (resp) => {
       meaning.definitions.map((definition) => {
         items.push({
           title: `[${meaning.partOfSpeech}]: ${word.word}: ${definition.definition}`,
-          subtitle: `${definition.example}` ? `${definition.example}` : "",
+          subtitle: definition.example ? `${definition.example}` : "",
           arg: definition.definition,
           variables: {
             action: "clipboard",
@@ -24,6 +24,12 @@ const transform = (resp) => {
 };
 
 const getPluginItems = async ({ inputStr }) => {
+  if (inputStr === "") {
+    return {
+      items: [],
+    };
+  }
+
   const configItems = [
     {
       command: "@config/arvis-freedict-plugin",

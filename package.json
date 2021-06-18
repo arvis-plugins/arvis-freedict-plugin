@@ -1,6 +1,6 @@
 {
   "name": "arvis-freedict-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
   "main": "index.js",
   "scripts": {
