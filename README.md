@@ -1,5 +1,10 @@
 # arvis-freedict-plugin
 
+[![CodeFactor](https://www.codefactor.io/repository/github/jopemachine/arvis-freedict-plugin/badge)](https://www.codefactor.io/repository/github/jopemachine/arvis-freedict-plugin)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+
+
 Dictionary plugin for [Arvis](https://github.com/jopemachine/arvis) using [dictionaryapi.dev](https://dictionaryapi.dev/)
 
 Note: This plugin can decrease the search performance of Arvis.
