@@ -1,10 +1,12 @@
 {
   "name": "arvis-freedict-plugin",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
   },
   "keywords": [
     "arvis",
@@ -21,6 +23,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "arvish": "0.1.4"
+    "arvish": "0.1.10"
   }
 }
