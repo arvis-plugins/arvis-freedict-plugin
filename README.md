@@ -9,7 +9,7 @@ Dictionary plugin for [Arvis](https://github.com/jopemachine/arvis) using [dicti
 
 Note: This plugin can decrease the search performance of Arvis.
 
-![](./demo1.png)
+![](./demo.png)
 
 ## Installation
 
