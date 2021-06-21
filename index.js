@@ -1,6 +1,6 @@
 const arvish = require("arvish");
 require("./init");
-const conf = arvish.getConfig().get("setting");
+const conf = arvish.config.get("setting");
 
 const transform = (resp) => {
   const items = [];
@@ -35,7 +35,7 @@ const getPluginItems = async ({ inputStr }) => {
       command: "@config/arvis-freedict-plugin",
       title: "Open config file of arvis-freedict-plugin",
       subtitle: "@config/arvis-freedict-plugin",
-      arg: arvish.getConfig().path,
+      arg: arvish.config.path,
     },
   ];
 
