@@ -5,8 +5,11 @@
     "enabled": true,
     "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
     "readme": "Dictionary plugin for Arvis using dictionaryapi.dev",
-    "version": "0.0.10",
+    "version": "0.1.2",
     "defaultIcon": "icon.png",
+    "variables": {
+        "lang": "en_US"
+    },
     "main": "index.js",
     "webAddress": "https://github.com/jopemachine/arvis-freedict-plugin",
     "actions": [

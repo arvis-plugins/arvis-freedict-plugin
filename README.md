@@ -26,11 +26,9 @@ $ npm i -g arvis-freedict-plugin
 
 ## Config
 
-You can edit this plugin's config.
+You can edit this plugin's config on `User config table` like below.
 
-You can open the config file by typing or copy and paste `@config/arvis-freedict-plugin` to Arvis.
-
-You can edit this plugin's config.
+![](./config.png)
 
 ### lang
 
