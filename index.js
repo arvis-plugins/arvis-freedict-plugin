@@ -1,7 +1,7 @@
 const arvish = require("arvish");
 
 const conf = {
-  lang: JSON.parse(process.env.lang)
+  lang: process.env.lang
 };
 
 const transform = (resp) => {
