@@ -17,6 +17,15 @@ const transform = (resp) => {
           variables: {
             action: "clipboard",
           },
+          quicklook: {
+            type: 'markdown',
+            data:
+`## ${word.word}
+### ${meaning.partOfSpeech}
+#### ${word.phonetics[0].text}
+> ${definition.definition}
+${definition.example ? `${definition.example}` : ""}
+`}
         });
       });
     });

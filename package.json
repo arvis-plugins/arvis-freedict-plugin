@@ -1,6 +1,6 @@
 {
   "name": "arvis-freedict-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
   "main": "index.js",
   "scripts": {
@@ -19,12 +19,10 @@
   "files": [
     "arvis-plugin.json",
     "*.js",
-    "README.md",
-    "LICENSE",
     "icon.png"
   ],
   "license": "MIT",
   "dependencies": {
-    "arvish": ">=0.5.4"
+    "arvish": ">=0.7.0"
   }
 }

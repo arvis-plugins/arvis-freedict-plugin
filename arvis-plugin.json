@@ -5,7 +5,7 @@
     "enabled": true,
     "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
     "readme": "Dictionary plugin for Arvis using dictionaryapi.dev",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "defaultIcon": "icon.png",
     "variables": {
         "lang": "en_US"
