@@ -5,13 +5,13 @@
     "enabled": true,
     "description": "Dictionary plugin for Arvis using dictionaryapi.dev",
     "readme": "Dictionary plugin for Arvis using dictionaryapi.dev",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "defaultIcon": "icon.png",
     "variables": {
         "lang": "en_US"
     },
     "main": "index.js",
-    "webAddress": "https://github.com/jopemachine/arvis-freedict-plugin",
+    "webAddress": "https://github.com/arvis-plugins/arvis-freedict-plugin",
     "actions": [
         {
             "type": "cond",
