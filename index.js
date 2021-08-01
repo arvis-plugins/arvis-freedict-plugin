@@ -24,7 +24,8 @@ const transform = (resp) => {
 ### ${meaning.partOfSpeech}
 #### ${word.phonetics[0].text}
 > ${definition.definition}
-${definition.example ? `${definition.example}` : ""}
+
+${definition.example ? `### Example\n${definition.example}` : ""}
 `}
         });
       });

@@ -8,9 +8,9 @@
 
 Dictionary plugin for [Arvis](https://github.com/jopemachine/arvis) using [dictionaryapi.dev](https://dictionaryapi.dev/)
 
-![](./demo.png)
+![](./media/demo.png)
 
-![](./demo2.png)
+![](./media/demo2.png)
 
 ## Installation
 
