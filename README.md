@@ -22,7 +22,7 @@ $ npm i -g arvis-freedict-plugin
 
 You can edit this plugin's config on `User config table` like below.
 
-![](./config.png)
+![](./media/config.png)
 
 ### lang
 
